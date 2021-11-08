@@ -9,6 +9,7 @@
 
 #include "date.h"
 #include "cb.h"
+#include "address.h"
 
 
 
@@ -20,6 +21,9 @@ int main(int argc, char const *argv[]) {
 
    std::cout << cb1 << std::endl;
 
+   people::Address ad1(12, "avenue des developpeurs", "", 21156, "Git City");
+
+   std::cout << ad1;
    std::cout << "Bye." << std::endl;
    return 0;
 }
