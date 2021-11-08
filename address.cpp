@@ -33,7 +33,7 @@ namespace people {
     }
 
     std::ostream& operator<<(std::ostream& os, const Address& address) {
-      os << std::to_string(address.nb()) << ", " << address.street() << std::endl;
+      os << "Address: " << std::to_string(address.nb()) << ", " << address.street() << std::endl;
       std::string details = address.details();
       if (details.length()!=0)
         os << address.details() << std::endl;
@@ -41,4 +41,5 @@ namespace people {
 
       return os;
     }
+
 }
