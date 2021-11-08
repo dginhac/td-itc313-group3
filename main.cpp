@@ -14,13 +14,12 @@
 
 int main(int argc, char const *argv[]) {
 
-   bank::CB cb1(1234'5678'1234'5678, date::Date(12,4), 123, bank::Card::mastercard,"Dom Ginhac");
-   bank::CB cb2(1234'5678'1234'5678, date::Date(12,4), 123, bank::Card::mastercard,"Dom Ginhac");
-   bank::CB cb3(1234'5678'1234'5678, date::Date(12,4), 123, bank::Card::mastercard,"Dom Ginhac");
+   bank::CB cb1(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
+   bank::CB cb2(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
+   bank::CB cb3(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
 
    std::cout << cb1 << std::endl;
 
    std::cout << "Bye." << std::endl;
-   std::cout << "Bye2." << std::endl;
    return 0;
 }

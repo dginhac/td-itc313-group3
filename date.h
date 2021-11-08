@@ -15,39 +15,19 @@
 namespace date {
    class Date {
    public:
-      Date(int month=1, int day=1);
+      Date(int year, int month);
       int month() const;
-      int day() const;
-      void updateMonth(int month);
-      void updateDay(int day);
-      void next();
-      void back();
+      int year() const;
+
    private:
+      int _year;
       int _month;
-      int _day;
 
    };
 
-   bool isDate(int month, int day);
-   int getDaysInMonth(int month);
-   int dayOfYear(Date d);
-   std::string toString(Date d);
+   bool isDate(int year, int month);
 
-   bool operator == (const Date&, const Date&); // comparison operators
-   bool operator != (const Date&, const Date&);
-   bool operator < (const Date&, const Date&);
-   bool operator > (const Date&, const Date&);
-   bool operator <= (const Date&, const Date&);
-   bool operator >= (const Date&, const Date&);
 
-   Date operator + (const Date& date, const int days); // date + integer
-   Date operator + (const int days, const Date& date); // integer + date
-   Date operator - (const Date& date, const int days); // date - integer
-
-   Date operator ++ (Date& date); // prefix increment: ++date
-   Date operator -- (Date& date); // prefix decrement: --date
-   Date operator ++ (Date& date, int); // use int paramater for postfix increment: date++
-   Date operator -- (Date& date, int); // use int paramater for postfix decrement: date--
 
    std::ostream& operator<<(std::ostream& os, const Date& date);
 
