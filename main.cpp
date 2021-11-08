@@ -21,5 +21,6 @@ int main(int argc, char const *argv[]) {
    std::cout << cb1 << std::endl;
 
    std::cout << "Bye." << std::endl;
+   std::cout << "Bye2." << std::endl;
    return 0;
 }
