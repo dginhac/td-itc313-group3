@@ -24,5 +24,7 @@ int main(int argc, char const *argv[]) {
    std::cout << "Bye 2." << std::endl;
    std::cout << "Bye 3." << std::endl;
    std::cout << "Bye 4." << std::endl;
+   date::Date d1(2023,4);
+   std::cout << d1.toString()  << std::endl;
    return 0;
 }
