@@ -22,6 +22,10 @@ namespace date {
     	return _year;
     }
 
+    std::string Date::toString() const {
+        return std::to_string(_month) + "/" + std::to_string(_year);
+
+    }
 
 
 

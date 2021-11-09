@@ -18,6 +18,7 @@ namespace date {
       Date(int year, int month);
       int month() const;
       int year() const;
+      std::string toString() const;
 
    private:
       int _year;
@@ -26,6 +27,7 @@ namespace date {
    };
 
    bool isDate(int year, int month);
+
 
 
 
