@@ -14,6 +14,7 @@
 
 int main(int argc, char const *argv[]) {
 
+   std::cout << "Hello world." << std::endl;
    bank::CB cb1(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
    bank::CB cb2(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
    bank::CB cb3(1234'5678'1234'5678, date::Date(2023,4), 123, bank::Card::mastercard,"Dom Ginhac");
