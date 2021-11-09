@@ -11,6 +11,7 @@
 #include "cb.h"
 #include "customer.h"
 #include "address.h"
+#include "account.h"
 
 
 int main(int argc, char const *argv[]) {
@@ -21,9 +22,14 @@ int main(int argc, char const *argv[]) {
 
 
    people::Address ad1(12, "rue des dev", "Residence 42", 21000, "Dijon");
-   people::Customer cu1(1, "Dom", "Ginhac", date::Date(1972,5), "tutu", "0601020304", "dginhac@u-bourgogne.fr", ad1);
+   people::Customer cu1(4, "Dom", "Ginhac", date::Date(1972,5), "tutu", "0601020304", "dginhac@u-bourgogne.fr", ad1);
 
    std::cout << cu1;
+
+   bank::Account a1(4, 1'000'000, "FR76XXX", cb1, date::Date(2000,01));
+
+   std::cout << a1;
+
    std::cout << "Bye." << std::endl;
    return 0;
 }

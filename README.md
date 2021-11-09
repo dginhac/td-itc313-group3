@@ -40,7 +40,7 @@ Methodes ou Fonctions Helper
 * Getters 
 * surcharges d'opérateur <<
 
-## Classe Address
+## Classe Address : OK
 
 Variables :
 * numero (nb) : int
